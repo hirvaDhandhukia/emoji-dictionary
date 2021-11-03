@@ -41,12 +41,12 @@ export default function App() {
   return (
     <div className="App">
       <h1>Emoji Dictionary</h1>
-      <input onChange={emojiInputHandler} />
+      <input onChange={emojiInputHandler} placeholder="Search"/>
       <div>
         <h2>{meaning}</h2>
       </div>
       <div>
-        <h3> emojis we know: </h3>
+        <h3> emojis I know: </h3>
         {emojisWeKnow.map(function (emoji) {
           return (
             <span
